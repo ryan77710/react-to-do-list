@@ -5,29 +5,15 @@ header {
   margin-top: 19px;
   font-size: 25px;
   color: slateblue;
-  text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.78);
-  background: -moz-linear-gradient(
-    top,
-    rgba(96, 0, 174, 1) 0%,
-    rgba(161, 85, 255, 0) 100%
-  );
-  background: -webkit-linear-gradient(
-    top,
-    rgba(96, 0, 174, 1) 0%,
-    rgba(161, 85, 255, 0) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(96, 0, 174, 1) 0%,
-    rgba(161, 85, 255, 0) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6000ae', endColorstr='#00a155ff',GradientType=0 );
 }
 .task,
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-height: 20vh;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 .task > div:nth-child(1) {
   box-sizing: border-box;
